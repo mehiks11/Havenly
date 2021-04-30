@@ -18,213 +18,6 @@
     <preference name='ui.shelf.height' value='26' />
   </preferences>
   <datasources>
-    <datasource caption='Sum sales per Time blot (S&amp;S Combined Havenly Transactions)' inline='true' name='federated.15rm1690nwelty1cvbanp16vxpdu' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='S&amp;S Combined Havenly Transactions' name='excel-direct.0qyucjn1b4dle51emwt4u0g0mfuq'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mehikapatel/Desktop/Havenly Transaction Data/S&amp;S Combined Havenly Transactions.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0qyucjn1b4dle51emwt4u0g0mfuq' name='Sum sales per time slot' table='[&apos;Sum sales per time slot$&apos;]' type='table'>
-          <columns gridOrigin='A1:E31:no:A1:E31:0' header='yes' outcome='2'>
-            <column datatype='string' name='Hour/DOW' ordinal='0' />
-            <column datatype='real' name='Sum Amount made' ordinal='1' />
-            <column datatype='integer' name='Count of Sales Made' ordinal='2' />
-            <column datatype='real' name='Average Sales Made' ordinal='3' />
-            <column datatype='real' name='Median Sales Made' ordinal='4' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0qyucjn1b4dle51emwt4u0g0mfuq' name='Sum sales per time slot' table='[&apos;Sum sales per time slot$&apos;]' type='table'>
-          <columns gridOrigin='A1:E31:no:A1:E31:0' header='yes' outcome='2'>
-            <column datatype='string' name='Hour/DOW' ordinal='0' />
-            <column datatype='real' name='Sum Amount made' ordinal='1' />
-            <column datatype='integer' name='Count of Sales Made' ordinal='2' />
-            <column datatype='real' name='Average Sales Made' ordinal='3' />
-            <column datatype='real' name='Median Sales Made' ordinal='4' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Sum sales per time slot]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:E31:no:A1:E31:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>2</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Hour/DOW</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[Hour/DOW]</local-name>
-            <parent-name>[Sum sales per time slot]</parent-name>
-            <remote-alias>Hour/DOW</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Sum Amount made</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Sum Amount made]</local-name>
-            <parent-name>[Sum sales per time slot]</parent-name>
-            <remote-alias>Sum Amount made</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Count of Sales Made</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Count of Sales Made]</local-name>
-            <parent-name>[Sum sales per time slot]</parent-name>
-            <remote-alias>Count of Sales Made</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Average Sales Made</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Average Sales Made]</local-name>
-            <parent-name>[Sum sales per time slot]</parent-name>
-            <remote-alias>Average Sales Made</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Median Sales Made</remote-name>
-            <remote-type>5</remote-type>
-            <local-name>[Median Sales Made]</local-name>
-            <parent-name>[Sum sales per time slot]</parent-name>
-            <remote-alias>Median Sales Made</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>real</local-type>
-            <aggregation>Sum</aggregation>
-            <precision>15</precision>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column caption='Hour/DOW1' datatype='string' name='[Hour/DOW]' role='dimension' type='nominal' />
-      <_.fcp.ObjectModelTableType.true...column caption='Sum sales per time slot' datatype='table' name='[__tableau_internal_object_id__].[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]' role='measure' type='quantitative' />
-      <column-instance column='[Hour/DOW]' derivation='None' name='[none:Hour/DOW:nk]' pivot='key' type='nominal' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
-      <style>
-        <style-rule element='mark'>
-          <encoding attr='color' field='[none:Hour/DOW:nk]' type='palette'>
-            <map to='#499894'>
-              <bucket>&quot;15&quot;</bucket>
-            </map>
-            <map to='#4e79a7'>
-              <bucket>&quot;Monday&quot;</bucket>
-            </map>
-            <map to='#59a14f'>
-              <bucket>&quot;Friday&quot;</bucket>
-            </map>
-            <map to='#76b7b2'>
-              <bucket>&quot;Thursday&quot;</bucket>
-            </map>
-            <map to='#79706e'>
-              <bucket>&quot;18&quot;</bucket>
-            </map>
-            <map to='#86bcb6'>
-              <bucket>&quot;16&quot;</bucket>
-            </map>
-            <map to='#8cd17d'>
-              <bucket>&quot;12&quot;</bucket>
-            </map>
-            <map to='#a0cbe8'>
-              <bucket>&quot;10&quot;</bucket>
-            </map>
-            <map to='#b07aa1'>
-              <bucket>&quot;Sunday&quot;</bucket>
-            </map>
-            <map to='#b6992d'>
-              <bucket>&quot;13&quot;</bucket>
-            </map>
-            <map to='#bab0ac'>
-              <bucket>&quot;19&quot;</bucket>
-            </map>
-            <map to='#d37295'>
-              <bucket>&quot;20&quot;</bucket>
-            </map>
-            <map to='#e15759'>
-              <bucket>&quot;Wednesday&quot;</bucket>
-            </map>
-            <map to='#edc948'>
-              <bucket>&quot;Saturday&quot;</bucket>
-            </map>
-            <map to='#f1ce63'>
-              <bucket>&quot;14&quot;</bucket>
-            </map>
-            <map to='#f28e2b'>
-              <bucket>&quot;Tuesday&quot;</bucket>
-            </map>
-            <map to='#ff9d9a'>
-              <bucket>&quot;17&quot;</bucket>
-            </map>
-            <map to='#ffbe7d'>
-              <bucket>&quot;11&quot;</bucket>
-            </map>
-          </encoding>
-        </style-rule>
-      </style>
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='Sum sales per time slot' id='Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92'>
-            <properties context=''>
-              <relation connection='excel-direct.0qyucjn1b4dle51emwt4u0g0mfuq' name='Sum sales per time slot' table='[&apos;Sum sales per time slot$&apos;]' type='table'>
-                <columns gridOrigin='A1:E31:no:A1:E31:0' header='yes' outcome='2'>
-                  <column datatype='string' name='Hour/DOW' ordinal='0' />
-                  <column datatype='real' name='Sum Amount made' ordinal='1' />
-                  <column datatype='integer' name='Count of Sales Made' ordinal='2' />
-                  <column datatype='real' name='Average Sales Made' ordinal='3' />
-                  <column datatype='real' name='Median Sales Made' ordinal='4' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
     <datasource caption='Count of Foods Sold per Day (S&amp;S Combined Havenly Transactions)' inline='true' name='federated.1r2ig0n1x120qc15zrt8i0j722oj' version='18.1'>
       <connection class='federated'>
         <named-connections>
@@ -331,35 +124,6 @@
           </object>
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
-    <datasource caption='S&amp;S Combined Havenly Transactions' inline='true' name='federated.1q57z7n1vaie021afuoek0egmsjl' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='S&amp;S Combined Havenly Transactions' name='excel-direct.0dgn7ua16lwkq51gcafjn1px7gu6'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mehikapatel/Desktop/Havenly Transaction Data/S&amp;S Combined Havenly Transactions.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-      </connection>
-      <aliases enabled='yes' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
-    </datasource>
-    <datasource caption='S&amp;S Combined Havenly Transactions (2)' inline='true' name='federated.1632ynt05t5eh21g80ss30hmfooc' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='S&amp;S Combined Havenly Transactions' name='excel-direct.0plm2gd12zfbmj15cuko101g5b5m'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mehikapatel/Desktop/Havenly Transaction Data/S&amp;S Combined Havenly Transactions.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-      </connection>
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph />
     </datasource>
     <datasource caption='Most Pop Foods By DoW (S&amp;S Combined Havenly Transactions)' inline='true' name='federated.06x9xrf0vhrr1q18xcqow0dmc157' version='18.1'>
       <connection class='federated'>
@@ -709,11 +473,218 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
+    <datasource caption='Sum sales per Time blot (S&amp;S Combined Havenly Transactions)' inline='true' name='federated.15rm1690nwelty1cvbanp16vxpdu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='S&amp;S Combined Havenly Transactions' name='excel-direct.0qyucjn1b4dle51emwt4u0g0mfuq'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mehikapatel/Desktop/Havenly Transaction Data/Work Here **S&amp;S Combined Havenly Transactions.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0qyucjn1b4dle51emwt4u0g0mfuq' name='Sum sales per time slot' table='[&apos;Sum sales per time slot$&apos;]' type='table'>
+          <columns gridOrigin='A1:E31:no:A1:E31:0' header='yes' outcome='2'>
+            <column datatype='string' name='Hour/DOW' ordinal='0' />
+            <column datatype='real' name='Sum Amount made' ordinal='1' />
+            <column datatype='integer' name='Count of Sales Made' ordinal='2' />
+            <column datatype='real' name='Average Sales Made' ordinal='3' />
+            <column datatype='real' name='Median Sales Made' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0qyucjn1b4dle51emwt4u0g0mfuq' name='Sum sales per time slot' table='[&apos;Sum sales per time slot$&apos;]' type='table'>
+          <columns gridOrigin='A1:E31:no:A1:E31:0' header='yes' outcome='2'>
+            <column datatype='string' name='Hour/DOW' ordinal='0' />
+            <column datatype='real' name='Sum Amount made' ordinal='1' />
+            <column datatype='integer' name='Count of Sales Made' ordinal='2' />
+            <column datatype='real' name='Average Sales Made' ordinal='3' />
+            <column datatype='real' name='Median Sales Made' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Sum sales per time slot]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E31:no:A1:E31:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hour/DOW</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Hour/DOW]</local-name>
+            <parent-name>[Sum sales per time slot]</parent-name>
+            <remote-alias>Hour/DOW</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sum Amount made</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Sum Amount made]</local-name>
+            <parent-name>[Sum sales per time slot]</parent-name>
+            <remote-alias>Sum Amount made</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count of Sales Made</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count of Sales Made]</local-name>
+            <parent-name>[Sum sales per time slot]</parent-name>
+            <remote-alias>Count of Sales Made</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Sales Made</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Sales Made]</local-name>
+            <parent-name>[Sum sales per time slot]</parent-name>
+            <remote-alias>Average Sales Made</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Median Sales Made</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Median Sales Made]</local-name>
+            <parent-name>[Sum sales per time slot]</parent-name>
+            <remote-alias>Median Sales Made</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Hour/DOW1' datatype='string' name='[Hour/DOW]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Sum sales per time slot' datatype='table' name='[__tableau_internal_object_id__].[Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92]' role='measure' type='quantitative' />
+      <column-instance column='[Hour/DOW]' derivation='None' name='[none:Hour/DOW:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Hour/DOW:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;15&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Monday&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Friday&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Thursday&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;18&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;16&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;12&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;10&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sunday&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;13&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;19&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;20&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Wednesday&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Saturday&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;14&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tuesday&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;17&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;11&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Sum sales per time slot' id='Sum sales per time slot_AD72B63A0341403D9D8945D24031BF92'>
+            <properties context=''>
+              <relation connection='excel-direct.0qyucjn1b4dle51emwt4u0g0mfuq' name='Sum sales per time slot' table='[&apos;Sum sales per time slot$&apos;]' type='table'>
+                <columns gridOrigin='A1:E31:no:A1:E31:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Hour/DOW' ordinal='0' />
+                  <column datatype='real' name='Sum Amount made' ordinal='1' />
+                  <column datatype='integer' name='Count of Sales Made' ordinal='2' />
+                  <column datatype='real' name='Average Sales Made' ordinal='3' />
+                  <column datatype='real' name='Median Sales Made' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
     <datasource caption='Item BreakDown (S&amp;S Combined Havenly Transactions)' inline='true' name='federated.17n6rkt1l529l21gt6sv71wce6wz' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='S&amp;S Combined Havenly Transactions' name='excel-direct.058dryh1xzqr6c1h49ahy05ez0kw'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mehikapatel/Desktop/Havenly Transaction Data/S&amp;S Combined Havenly Transactions.xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mehikapatel/Desktop/Havenly Transaction Data/Work Here **S&amp;S Combined Havenly Transactions.xlsx' interpretationMode='0' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.058dryh1xzqr6c1h49ahy05ez0kw' name='Item BreakDown' table='[&apos;Item BreakDown$&apos;]' type='table'>
@@ -816,11 +787,157 @@
         </objects>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     </datasource>
+    <datasource caption='Most pop foods by ToD (S&amp;S Combined Havenly Transactions)' inline='true' name='federated.07i4lol19wmybd11g9lc31be5tcs' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='S&amp;S Combined Havenly Transactions' name='excel-direct.1lcav1302l6p8517h09u50jqiqqt'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mehikapatel/Desktop/Havenly Transaction Data/Work Here **S&amp;S Combined Havenly Transactions.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1lcav1302l6p8517h09u50jqiqqt' name='Most pop foods by ToD' table='[&apos;Most pop foods by ToD$&apos;]' type='table'>
+          <columns gridOrigin='A1:E7:no:A1:E7:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='10:00-12:00' ordinal='1' />
+            <column datatype='string' name='12:00-3:00' ordinal='2' />
+            <column datatype='string' name='3:00-6:00' ordinal='3' />
+            <column datatype='string' name='6:00-8:30' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1lcav1302l6p8517h09u50jqiqqt' name='Most pop foods by ToD' table='[&apos;Most pop foods by ToD$&apos;]' type='table'>
+          <columns gridOrigin='A1:E7:no:A1:E7:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Rank' ordinal='0' />
+            <column datatype='string' name='10:00-12:00' ordinal='1' />
+            <column datatype='string' name='12:00-3:00' ordinal='2' />
+            <column datatype='string' name='3:00-6:00' ordinal='3' />
+            <column datatype='string' name='6:00-8:30' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Most pop foods by ToD]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:E7:no:A1:E7:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[Most pop foods by ToD]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>10:00-12:00</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[10:00-12:00]</local-name>
+            <parent-name>[Most pop foods by ToD]</parent-name>
+            <remote-alias>10:00-12:00</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>12:00-3:00</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[12:00-3:00]</local-name>
+            <parent-name>[Most pop foods by ToD]</parent-name>
+            <remote-alias>12:00-3:00</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>3:00-6:00</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[3:00-6:00]</local-name>
+            <parent-name>[Most pop foods by ToD]</parent-name>
+            <remote-alias>3:00-6:00</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>6:00-8:30</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[6:00-8:30]</local-name>
+            <parent-name>[Most pop foods by ToD]</parent-name>
+            <remote-alias>6:00-8:30</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='Sum' datatype='integer' name='[Rank]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='Most pop foods by ToD' datatype='table' name='[__tableau_internal_object_id__].[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Most pop foods by ToD' id='Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471'>
+            <properties context=''>
+              <relation connection='excel-direct.1lcav1302l6p8517h09u50jqiqqt' name='Most pop foods by ToD' table='[&apos;Most pop foods by ToD$&apos;]' type='table'>
+                <columns gridOrigin='A1:E7:no:A1:E7:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Rank' ordinal='0' />
+                  <column datatype='string' name='10:00-12:00' ordinal='1' />
+                  <column datatype='string' name='12:00-3:00' ordinal='2' />
+                  <column datatype='string' name='3:00-6:00' ordinal='3' />
+                  <column datatype='string' name='6:00-8:30' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
     <datasource caption='Most Pop Foods By DoW (S&amp;S Combined Havenly Transactions) (3)' inline='true' name='federated.1mrirgj1m5nu9j15klbw917p62ms' version='18.1'>
       <connection class='federated'>
         <named-connections>
           <named-connection caption='S&amp;S Combined Havenly Transactions' name='excel-direct.0farvvg1jxftw819eas2s0evvhdm'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mehikapatel/Desktop/Havenly Transaction Data/S&amp;S Combined Havenly Transactions.xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mehikapatel/Desktop/Havenly Transaction Data/Work Here **S&amp;S Combined Havenly Transactions.xlsx' interpretationMode='0' password='' server='' validate='no' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0farvvg1jxftw819eas2s0evvhdm' name='Most Pop Foods By DoW' table='[&apos;Most Pop Foods By DoW$&apos;]' type='table'>
@@ -993,152 +1110,6 @@
                   <column datatype='string' name='Thursday' ordinal='4' />
                   <column datatype='string' name='Friday' ordinal='5' />
                   <column datatype='string' name='Saturday' ordinal='6' />
-                </columns>
-              </relation>
-            </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
-    <datasource caption='Most pop foods by ToD (S&amp;S Combined Havenly Transactions)' inline='true' name='federated.07i4lol19wmybd11g9lc31be5tcs' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='S&amp;S Combined Havenly Transactions' name='excel-direct.1lcav1302l6p8517h09u50jqiqqt'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mehikapatel/Desktop/Havenly Transaction Data/S&amp;S Combined Havenly Transactions.xlsx' interpretationMode='0' password='' server='' validate='no' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1lcav1302l6p8517h09u50jqiqqt' name='Most pop foods by ToD' table='[&apos;Most pop foods by ToD$&apos;]' type='table'>
-          <columns gridOrigin='A1:E7:no:A1:E7:0' header='yes' outcome='6'>
-            <column datatype='integer' name='Rank' ordinal='0' />
-            <column datatype='string' name='10:00-12:00' ordinal='1' />
-            <column datatype='string' name='12:00-3:00' ordinal='2' />
-            <column datatype='string' name='3:00-6:00' ordinal='3' />
-            <column datatype='string' name='6:00-8:30' ordinal='4' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1lcav1302l6p8517h09u50jqiqqt' name='Most pop foods by ToD' table='[&apos;Most pop foods by ToD$&apos;]' type='table'>
-          <columns gridOrigin='A1:E7:no:A1:E7:0' header='yes' outcome='6'>
-            <column datatype='integer' name='Rank' ordinal='0' />
-            <column datatype='string' name='10:00-12:00' ordinal='1' />
-            <column datatype='string' name='12:00-3:00' ordinal='2' />
-            <column datatype='string' name='3:00-6:00' ordinal='3' />
-            <column datatype='string' name='6:00-8:30' ordinal='4' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Most pop foods by ToD]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='integer' name='context'>0</attribute>
-              <attribute datatype='string' name='gridOrigin'>&quot;A1:E7:no:A1:E7:0&quot;</attribute>
-              <attribute datatype='boolean' name='header'>true</attribute>
-              <attribute datatype='integer' name='outcome'>6</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Rank</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Rank]</local-name>
-            <parent-name>[Most pop foods by ToD]</parent-name>
-            <remote-alias>Rank</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>10:00-12:00</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[10:00-12:00]</local-name>
-            <parent-name>[Most pop foods by ToD]</parent-name>
-            <remote-alias>10:00-12:00</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>12:00-3:00</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[12:00-3:00]</local-name>
-            <parent-name>[Most pop foods by ToD]</parent-name>
-            <remote-alias>12:00-3:00</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>3:00-6:00</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[3:00-6:00]</local-name>
-            <parent-name>[Most pop foods by ToD]</parent-name>
-            <remote-alias>3:00-6:00</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>6:00-8:30</remote-name>
-            <remote-type>130</remote-type>
-            <local-name>[6:00-8:30]</local-name>
-            <parent-name>[Most pop foods by ToD]</parent-name>
-            <remote-alias>6:00-8:30</remote-alias>
-            <ordinal>4</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <collation flag='1' name='LEN_RUS_S2' />
-            <attributes>
-              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
-            </attributes>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column aggregation='Sum' datatype='integer' name='[Rank]' role='dimension' type='ordinal' />
-      <_.fcp.ObjectModelTableType.true...column caption='Most pop foods by ToD' datatype='table' name='[__tableau_internal_object_id__].[Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471]' role='measure' type='quantitative' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='Most pop foods by ToD' id='Most pop foods by ToD_5F4F8A3812CB46F48C26EEF4639D5471'>
-            <properties context=''>
-              <relation connection='excel-direct.1lcav1302l6p8517h09u50jqiqqt' name='Most pop foods by ToD' table='[&apos;Most pop foods by ToD$&apos;]' type='table'>
-                <columns gridOrigin='A1:E7:no:A1:E7:0' header='yes' outcome='6'>
-                  <column datatype='integer' name='Rank' ordinal='0' />
-                  <column datatype='string' name='10:00-12:00' ordinal='1' />
-                  <column datatype='string' name='12:00-3:00' ordinal='2' />
-                  <column datatype='string' name='3:00-6:00' ordinal='3' />
-                  <column datatype='string' name='6:00-8:30' ordinal='4' />
                 </columns>
               </relation>
             </properties>
@@ -1493,8 +1464,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='1450' minheight='1450' sizing-mode='vscroll' />
           <zones>
-            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='21' w='100000' x='0' y='0'>
-              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='20' param='vert' w='98400' x='800' y='1000'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='23' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98000' id='22' param='vert' w='98400' x='800' y='1000'>
                 <zone fixed-size='280' h='49000' id='3' is-fixed='true' name='Bar By DoW' w='49200' x='800' y='1000'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
@@ -1574,7 +1545,7 @@
       <simple-id uuid='{57E2ACCE-6E5B-4BC6-B532-E7B46F1D1519}' />
     </dashboard>
   </dashboards>
-  <windows show-side-pane='false' source-height='198'>
+  <windows show-side-pane='false' source-height='156'>
     <window class='worksheet' name='Bar By DoW'>
       <cards>
         <edge name='left'>
