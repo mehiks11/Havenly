@@ -24,4 +24,4 @@ For this intial report, basic EDA was used to pull several points of information
 ## Communication
 In addition to the slides and visuals presented, I plan to embed my tableau dashboard to the eventual email I will send to Havenly.
 
-![Tableau Dashboard](HavenlyTabDashboard.png "Dashboard")
+![Tableau Dashboard](Deliverables/HavenlyTabDashboard.png "Dashboard")
